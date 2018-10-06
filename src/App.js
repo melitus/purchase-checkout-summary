@@ -6,6 +6,7 @@ import Subtotal from './components/Subtotal/Subtotal';
 import PickupSavings from './components/PickupSavings/PIckupSavings';
 import TaxesFees from './components/TaxesFees/TaxesFees';
 import EstimatedTotal from './components/EstimatedTotal/EstimatedTotal';
+import ItemDetails from './components/ItemDetails/ItemDetails';
 
 class App extends Component {
   constructor(props){
@@ -27,6 +28,7 @@ class App extends Component {
            <TaxesFees taxes={this.state.taxes} />
            <hr />
            <EstimatedTotal price={this.state.estimatedTotal} />
+           <ItemDetails />
         </Container>
       </div>
     );
