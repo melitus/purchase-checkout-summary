@@ -5,8 +5,8 @@ class Subtotal extends Component{
     render(){
         return(
             <Row className="show-grid">
-              <Col xs="6">Subtotal</Col>
-              <Col xs="6">{`$${ this.props.price}`}</Col>
+              <Col xs="6" style={{fontSize: "15px"}}>Subtotal</Col>
+              <Col xs="6" style={{fontSize: "15px"}}>{`$${ this.props.price}`}</Col>
             </Row>       
         )
     }
