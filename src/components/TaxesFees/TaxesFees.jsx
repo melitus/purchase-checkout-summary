@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {  Row, Col } from 'reactstrap';
 
-class Subtotal extends Component{
+class TaxesFees extends Component{
     render(){
         return(
             <Row className="show-grid">
@@ -12,4 +12,4 @@ class Subtotal extends Component{
     }
 }
 
-export default Subtotal;
+export default TaxesFees;
