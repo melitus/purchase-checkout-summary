@@ -17,3 +17,11 @@
   outline: none;
   font-size: 15px ;
 }
+.price-strike{
+  text-decoration-line: line-through;
+  color: grey;
+}
+.promo-code-button:focus{
+  outline: none;
+
+}

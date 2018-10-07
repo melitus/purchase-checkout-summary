@@ -16,12 +16,12 @@ class ItemDetails extends Component {
     render() {
         return (
             <div>
-                <Button 
-                 className="item-details-button" 
-                 color="link" 
-                 onClick={this.toggle}
-                 >
-                 {this.state.collapse === false ? "See" : "Hide"} item Details
+                <Button
+                    className="item-details-button"
+                    color="link"
+                    onClick={this.toggle}
+                >
+                    {this.state.collapse === false ? "See" : "Hide"} item Details
                  {this.state.collapse === false ? `+` : `-`}
                 </Button>
 
@@ -30,11 +30,14 @@ class ItemDetails extends Component {
                         <CardBody>
                             <Media>
                                 <Media left href="#">
-                                    <Media object src="holder.js/64x64" alt="Generic placeholder image" style={{width:100, height:100}}/>
+                                    <Media object src="https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
+                                        alt="Generic placeholder image"
+                                        width={100}
+                                        height={100} />
                                 </Media>
                                 <Media body>
                                     <p>
-                                    Cras sit amet nibh libero, in gravida nulla
+                                      Essentials by OFM Ess 3085 Racing style leather Gaming chare, Red.
                                     </p>
                                     <Row className="show-grid">
                                         <Col xs={6}>
