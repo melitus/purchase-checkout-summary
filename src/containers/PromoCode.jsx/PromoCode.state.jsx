@@ -9,10 +9,12 @@ export const PromoCodeContainer = props => (
     <PromoCode
     />
     );
-  
+  handleChange = event => {
+    this.props.onHandleChange(event);
+  }
   
   export const mapDispatchToProps = dispatch => ({
-    onHandleChange: () => dispatch(handleChange())
+    onHandleChange: () => dispatch(handleChange(event))
   });
   
   export const mapStateToProps = state => ({

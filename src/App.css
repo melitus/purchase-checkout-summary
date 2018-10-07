@@ -23,5 +23,9 @@
 }
 .promo-code-button:focus{
   outline: none;
+  margin-left: 20px;
 
+}
+.btn-round{
+  justify-content: center;
 }
