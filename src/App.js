@@ -14,7 +14,7 @@ class App extends Component {
     super(props);
  
     this.state = {
-      total: 100,
+      total: 200,
       pickupSavings: -3.85,
       taxes: 0,
       estimatedTotal: 0,
