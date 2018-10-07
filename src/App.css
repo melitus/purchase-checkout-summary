@@ -1,5 +1,8 @@
 .container{
   margin-top: 10px;
+  border-color: dodgerblue solid;
+  
+  
 
 }
 .container-purchase_summary{
@@ -12,4 +15,5 @@
 }
 .item-details-button:focus{
   outline: none;
+  font-size: 15px ;
 }
