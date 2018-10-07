@@ -22,6 +22,9 @@ class PromoCode extends Component{
     toggle() {
         this.setState({ collapse: !this.state.collapse });
     }
+    promoChangeHandler = (event) => {
+        this.setState({promoCode: event.target.value});
+    }
     render(){
         return(
             <div>
@@ -39,13 +42,13 @@ class PromoCode extends Component{
                             <Col xs={6}>
                                 <Form inline>
                                 <FormGroup>
-                                <Label for="exampleEmail">Promo Code</Label>
+                                <Label>Promo Code</Label>
                                 <Input 
                                   type="text" 
                                   name="promocode" 
                                   value={this.props.promocode}
                                   placeholder="Enter promo code" 
-                                  onChange={this.handleOnChange}/>
+                                  onChange={this.promoChangeHandler}/>
 
                                 </FormGroup>
                                 <Button

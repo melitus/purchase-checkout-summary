@@ -1,13 +1,12 @@
-import { PROMO_CODE } from '../actions/types';
+import * as actionTypes from '../actions/types';
 
 const initialState = {
     collapse: false,
     value: ""
 }
-
-export default function (state = initialState, action) {
-    switch(action.type){
-        case PROMO_CODE:
+const reducer = ( state = initialState, action ) => {
+    switch ( action.type ) {
+        case actionTypes.PROMO_CODE:
         return{
             ...state,
            value: action.payload
@@ -16,3 +15,5 @@ export default function (state = initialState, action) {
         return state;
     }
 }
+
+export default reducer;
